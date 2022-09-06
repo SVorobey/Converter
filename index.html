@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <title>Конвертёр валют</title>
+</head>
+<body>
+    <div class="container">
+        <h1>
+            Конвертер валют
+        </h1>
+        <form action="" class="form">       <!-- Creating a form in order to have inputs and write our currency there -->
+            <div class="form__row">
+                <div class="input__row">
+                    <p class="title">RUB</p>        <!-- The description about currency which is used in the input near the description -->
+                    <input type="text" class="input" value="">
+                </div>
+                <p class="description">российский рубль</p>
+            </div>
+            <div class="form__row">
+                <div class="input__row">
+                    <p class="title">EUR</p>
+                    <input type="text" class="input" value="">
+                </div>
+                <p class="description">евро</p>
+            </div>
+            <div class="form__row">
+                <div class="input__row">
+                    <p class="title">USD</p>
+                    <input type="text" class="input" value="">
+                </div>
+                <p class="description">доллар США</p>
+            </div>
+            <div class="form__row">
+                <div class="input__row">
+                    <p class="title">BYN</p>
+                    <input type="text" class="input" value="">
+                </div>
+                <p class="description">белорусский рубль</p>
+            </div>
+        </form>
+        <input type="text" class="date__change" placeholder="2022-4-9">     <!-- Input to check back-in-time currency exchange rate -->
+        <div class="date__description">Ввод даты осуществляется в формате ГГГГ-М-Д</div>
+        <button class="date__button">Подтвердить</button>
+        
+        <div class="color-choose"> <!-- The block dedicated to modify the appearance of the table in real time -->
+            <div class="color-choose__1">
+                <label for="color-table">Выберите фон формы:</label>
+            <input type="color" value="#e2e8ef" id="color-table"> 
+            </div>
+            <div class="color-choose__2">
+                <label for="color-text">Выберите фон сайта:</label>
+                <input type="color" value="#000000" id="color-text"> 
+            </div>
+        </div>
+    </div>
+<script src="js/script.js"></script>
+</body>
+</html>
